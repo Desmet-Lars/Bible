@@ -1,27 +1,15 @@
+/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom dark mode styling */
+.dark {
+  --bg-color: #1a202c; /* Example dark mode background color */
+  --text-color: #f7fafc; /* Example dark mode text color */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
